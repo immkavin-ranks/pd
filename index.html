@@ -7482,6 +7482,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><em>Kavin Manoharan</em> <strong><a href="mailto:kavinsde@skiff.com">kavinsde@skiff.com</a></strong></p>
+<p><a href="https://kavinsde.netlify.app/">kavinsde.netlify.app</a></p>
+</blockquote>
 <h1 id="Assignment---Importing-Data-into-Pandas-Dataframes">Assignment - Importing Data into Pandas Dataframes<a class="anchor-link" href="#Assignment---Importing-Data-into-Pandas-Dataframes">¶</a></h1>
 </div>
 </div>
@@ -7509,8 +7513,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Load-the-Pandas-Library">Load the Pandas Library<a class="anchor-link" href="#Load-the-Pandas-Library">¶</a></h2><blockquote>
-<p>When importing the Pandas package the convention is to use the command <em><strong>import pandas as pd</strong></em> which allows you to call Pandas functions by prefixing them with pd. instead of pandas..</p>
+<h3 id="Load-the-Pandas-Library">Load the Pandas Library<a class="anchor-link" href="#Load-the-Pandas-Library">¶</a></h3><blockquote>
+<p>When importing the Pandas package the convention is to use the command <strong>import pandas as pd</strong> which allows you to call Pandas functions by prefixing them with pd. instead of pandas..</p>
 </blockquote>
 </div>
 </div>
@@ -7520,7 +7524,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -7550,10 +7554,12 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Reading-a-local-CSV-file">Reading a local CSV file<a class="anchor-link" href="#Reading-a-local-CSV-file">¶</a></h3><blockquote>
-<p>To import a CSV file and put the contents into a Pandas dataframe we use the read_csv() function, which is appended after calling the pd object we created when we imported Pandas. The read_csv() function can take several arguments, but by default you just need to provide the path to the file you wish to read. Here, read_csv will read in the file called Ice Cream Sales - temperatures.csv which is present in the same directory.</p>
+<p>To import a CSV file and put the contents into a Pandas dataframe we use the read_csv() function, which is appended after calling the pd object we created when we imported Pandas. The read_csv() function can take several arguments, but by default you just need to provide the path to the file you wish to read.</p>
 </blockquote>
+<pre><code>The Ice Cream Sales - temperatures.csv
+</code></pre>
 <blockquote>
-<p>The Ice Cream Sales - temperatures.csv is a public dataset relating temperature and ice cream revenue.</p>
+<p>Dataset Temperature and Ice Cream Sales - A public dataset relating temperature and ice cream revenue</p>
 </blockquote>
 </div>
 </div>
@@ -7563,10 +7569,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'Ice Cream Sales - temperatures.csv'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'Data/Ice Cream Sales - temperatures.csv'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7591,10 +7597,179 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Temperature</th>
+<th>Ice Cream Profits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>39</td>
+<td>13.17</td>
+</tr>
+<tr>
+<th>1</th>
+<td>40</td>
+<td>11.88</td>
+</tr>
+<tr>
+<th>2</th>
+<td>41</td>
+<td>18.82</td>
+</tr>
+<tr>
+<th>3</th>
+<td>42</td>
+<td>18.65</td>
+</tr>
+<tr>
+<th>4</th>
+<td>43</td>
+<td>17.02</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e1a4991-b498-4f8a-ae22-f0725aafd4d9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Renaming-Column-Headers-on-Import">Renaming Column Headers on Import<a class="anchor-link" href="#Renaming-Column-Headers-on-Import">¶</a></h4><blockquote>
+<p>To rename the columns, we simply use read_csv() to load the file and then pass in a list of the new names to the names argument, and use skiprows to ignore the first row of the file which contains the old column names.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3050fb7d-1241-4572-84b1-38496a78d18b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'Data/Ice Cream Sales - temperatures.csv'</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">'Temp in Celcius'</span><span class="p">,</span> <span class="s1">'Ice Cream Sale Profits'</span><span class="p">],</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Temp in Celcius</th>
+<th>Ice Cream Sale Profits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>39</td>
+<td>13.17</td>
+</tr>
+<tr>
+<th>1</th>
+<td>40</td>
+<td>11.88</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a973d246-51e9-4594-ab22-95c7f68b928e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Reading-a-remote-CSV-file">Reading a remote CSV file<a class="anchor-link" href="#Reading-a-remote-CSV-file">¶</a></h3><blockquote>
+<p>You can also use read_csv() to read remote CSV files. Instead of passing in the path to the file you provide the full URL to the CSV file. Here, I’m loading a CSV file from my GitHub account.</p>
+</blockquote>
+<h4 id="Defining-which-fields-to-import">Defining which fields to import<a class="anchor-link" href="#Defining-which-fields-to-import">¶</a></h4><blockquote>
+<p>You can use the usecols argument to define the list of column names to import.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2989a04b-ca6d-4823-86b8-d893b9ed8329">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://raw.githubusercontent.com/immkavin-ranks/pd/main/Data/spotify_long_tracks_2014_2024.csv'</span><span class="p">,</span>\
+                 <span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">,</span> <span class="s1">'Artists'</span><span class="p">])</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7625,35 +7800,25 @@ a.anchor-link {
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>Temperature</th>
-<th>Ice Cream Profits</th>
+<th>Name</th>
+<th>Artists</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>0</th>
-<td>39</td>
-<td>13.17</td>
+<td>Steady Rain in a Forest with Light Background ...</td>
+<td>Nature Sounds</td>
 </tr>
 <tr>
 <th>1</th>
-<td>40</td>
-<td>11.88</td>
+<td>Soundarya Lahari</td>
+<td>Mambalam Sisters</td>
 </tr>
 <tr>
 <th>2</th>
-<td>41</td>
-<td>18.82</td>
-</tr>
-<tr>
-<th>3</th>
-<td>42</td>
-<td>18.65</td>
-</tr>
-<tr>
-<th>4</th>
-<td>43</td>
-<td>17.02</td>
+<td>Waves of Abundance &amp; Fullfillment</td>
+<td>Zen Life Relax</td>
 </tr>
 </tbody>
 </table>
@@ -7662,7 +7827,23 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3050fb7d-1241-4572-84b1-38496a78d18b">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eda016ca-7b09-4c43-aa9b-69f99f1f73a1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Reading-Microsoft-Excel-files-with-Pandas">Reading Microsoft Excel files with Pandas<a class="anchor-link" href="#Reading-Microsoft-Excel-files-with-Pandas">¶</a></h2><blockquote>
+<p>Pandas includes built-in functionality for reading Microsoft Excel spreadsheet files via its read_excel() function. This works in the same way as read_csv() so can be used on local Excel documents as well as remote files, however, as Excel files are a bit more bloated than CSV files, it can be a bit slower.</p>
+</blockquote>
+<h4 id="Specifying-the-number-of-rows-to-read">Specifying the number of rows to read<a class="anchor-link" href="#Specifying-the-number-of-rows-to-read">¶</a></h4><blockquote>
+<p>To restrict the number of rows that are read in you can pass an integer representing the number of rows to the nrows argument of read_csv().</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=977c832f-cd5a-4a89-a0da-3677c21b420d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7670,7 +7851,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'Data/team-players.xlsx'</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -7701,50 +7883,253 @@ a.anchor-link {
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>Temperature</th>
-<th>Ice Cream Profits</th>
+<th>Player</th>
+<th>Role</th>
+<th>Price</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>0</th>
-<td>39</td>
-<td>13.17</td>
+<td>Ambati Rayudu (R)</td>
+<td>Batsman</td>
+<td>2.20 crore</td>
 </tr>
 <tr>
 <th>1</th>
-<td>40</td>
-<td>11.88</td>
+<td>Monu Kumar (R)</td>
+<td>Batsman</td>
+<td>20 lakhs</td>
 </tr>
 <tr>
 <th>2</th>
-<td>41</td>
-<td>18.82</td>
-</tr>
-<tr>
-<th>3</th>
-<td>42</td>
-<td>18.65</td>
-</tr>
-<tr>
-<th>4</th>
-<td>43</td>
-<td>17.02</td>
-</tr>
-<tr>
-<th>5</th>
-<td>43</td>
-<td>15.88</td>
-</tr>
-<tr>
-<th>6</th>
-<td>44</td>
-<td>19.07</td>
+<td>Murali Vijay (R)</td>
+<td>Batsman</td>
+<td>2 crore</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=59d12c9a-cc0a-4748-a146-8a4a119ae676">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Reading-HTML-with-Pandas">Reading HTML with Pandas<a class="anchor-link" href="#Reading-HTML-with-Pandas">¶</a></h2><blockquote>
+<p>One other handy feature of Pandas is the read_html() function. This allows you to parse HTML markup from remote web pages or local HTML documents and extract any tables present.</p>
+</blockquote>
+<blockquote>
+<p>The read_html() function returns any tables it finds in a list, so if more than one is present, you’ll need to define which one to display in your dataframe using its list index, which starts from zero.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e8510ddd-1682-4bda-912c-2abb63dcc433">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">'https://en.wikipedia.org/wiki/Comparison_of_programming_languages#General_comparison'</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Language</th>
+<th>Original purpose</th>
+<th>Imperative</th>
+<th>Object-oriented</th>
+<th>Functional</th>
+<th>Procedural</th>
+<th>Generic</th>
+<th>Reflective</th>
+<th>Other paradigms</th>
+<th>Standardized?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1C:Enterprise programming language</td>
+<td>Application, RAD, business, general, web, mobile</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Object-based, Prototype-based programming</td>
+<td>No</td>
+</tr>
+<tr>
+<th>1</th>
+<td>ActionScript</td>
+<td>Application, client-side, web</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>prototype-based</td>
+<td>Yes 1999-2003, ActionScript 1.0 with ES3, Acti...</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Ada</td>
+<td>Application, embedded, realtime, system</td>
+<td>Yes</td>
+<td>Yes[2]</td>
+<td>No</td>
+<td>Yes[3]</td>
+<td>Yes[4]</td>
+<td>No</td>
+<td>Concurrent,[5] distributed,[6]</td>
+<td>Yes 1983, 2005, 2012, ANSI, ISO, GOST 27831-88[7]</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Aldor</td>
+<td>Highly domain-specific, symbolic computing</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>NaN</td>
+<td>No</td>
+</tr>
+<tr>
+<th>4</th>
+<td>ALGOL 58</td>
+<td>Application</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>NaN</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12b0654d-d0ea-479d-a318-c3c48127de8e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Reading-SQL-Database-with-Pandas">Reading SQL Database with Pandas<a class="anchor-link" href="#Reading-SQL-Database-with-Pandas">¶</a></h2><blockquote>
+<p>You can use read_sql() to read db files. To connect database file we import sqlite3.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dd6809f6-d631-46a8-9279-5d2ebbbe0a3d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'Data/favorites.db'</span><span class="p">)</span>
+
+<span class="c1"># Read the data from the database into a DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s1">'SELECT * FROM shows'</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+
+<span class="c1"># Close the connection to the database</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>      id                  title
+0      1  How I Met Your Mother
+1      2           The Sopranos
+2      3    Friday Night Lights
+3      4             Family Guy
+4      5               New Girl
+..   ...                    ...
+152  153               Sherlock
+153  154         Anne With An E
+154  155            Money Heist
+155  156             Succession
+156  157         Silicon Valley
+
+[157 rows x 2 columns]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=27ad3e4b-8c54-4043-a71b-3474f80ca17c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Requirments">Requirments<a class="anchor-link" href="#Requirments">¶</a></h2><ul>
+<li>Pandas</li>
+<li>Sqlite3</li>
+<li>Openpyxl</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7755,8 +8140,15 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><ol>
-<li><a href="https://www.kaggle.com/datasets/raphaelmanayon/temperature-and-ice-cream-sales">A Dataset from Kaggle</a></li>
+<h2 id="References-https://github.com/immkavin-ranks/pd">References <a href="https://github.com/immkavin-ranks/pd">https://github.com/immkavin-ranks/pd</a><a class="anchor-link" href="#References-https://github.com/immkavin-ranks/pd">¶</a></h2><ol>
+<li><a href="https://www.kaggle.com">Datasets from Kaggle</a><ul>
+<li><a href="https://www.kaggle.com/datasets/raphaelmanayon/temperature-and-ice-cream-sales">Temperature and Ice Cream Sales</a></li>
+<li><a href="https://www.kaggle.com/datasets/kanchana1990/spotifys-long-hits-2014-2024">Spotify's Long Hits (2014-2024)</a></li>
+<li><a href="https://www.kaggle.com/datasets/nischalkasera07/ipl2020dataset?select=team-players.xlsx">IPL-2020 Dataset</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_programming_languages#General_comparison">Comparison of Programming Languages</a></li>
+<li><a href="https://cs50.harvard.edu/x/2023/problems/7/favorites/">CS50x 2023 Practice Problem-Favorites</a></li>
+</ul>
+</li>
 <li><a href="https://practicaldatascience.co.uk/data-science/how-to-import-data-into-pandas-dataframes">An Article from Practical Data Science</a></li>
 <li><a href="https://www.w3schools.com/python/pandas">W3Schools Pandas Tutorial</a></li>
 </ol>
